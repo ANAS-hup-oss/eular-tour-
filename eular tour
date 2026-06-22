@@ -1,0 +1,15 @@
+// ================================<< eular tour >> from tree to array ==================
+int tin[N],tout[N];
+int timer;
+vec euler;
+vec arr;
+vector<int>vis;
+void dfs(int u) {
+   vis[u]=true;
+    euler.push_back(u);
+    for(auto v:adj[u]) {
+        if(!vis[v]) {
+            dfs(v);
+        }
+    }
+}
