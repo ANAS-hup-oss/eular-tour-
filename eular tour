@@ -1,4 +1,4 @@
-vector<int> euler; // store tour
+vector<int> euler; 
 
 int in[N], out[N]; // entry / exit time
 int timer = 0;
